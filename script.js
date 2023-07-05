@@ -28,7 +28,7 @@ const person = new Person("John", 25);
 console.log(person.name);
 person.age = 25;
 
-const student = new Student("Jane", 30);
+const student = new Student("Alice", 30);
 console.log(student.name);
 student.study();
 
