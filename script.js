@@ -28,11 +28,11 @@ const person = new Person("John", 24);
 console.log(person.name);
 person.age = 25;
 
-const student = new Student("jakob", 24);
+const student = new Student("John", 30);
 console.log(student.name);
 student.study();
 
-const teacher = new Teacher("Dom", 24);
+const teacher = new Teacher("Alice", 30);
 console.log(teacher.name);
 teacher.teach();
 // Do not change the code below this line
