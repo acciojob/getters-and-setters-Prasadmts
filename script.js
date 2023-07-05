@@ -1,14 +1,14 @@
 //complete this code
 class Person {
 	constructor(name, age) {
-		this.name = name,
-		this.age = age
+		this._name = name,
+		this._age = age
 	}
 	get name() {
-		return this.name;
+		return this._name;
 	}
 	set age() {
-		this.age = age;
+		this._age = age;
 	}
 }
 
@@ -23,15 +23,18 @@ class Teacher extends Person {
 		console.log(`${this.name} is teaching`);
 	}
 }
-	const student = new Student("John Doe", 20);
-    const teacher = new Teacher("Jane Smith", 35);
 
-    console.log(student.name); // Output: John Doe
-    student.age = 21;
-    console.log(student.age); // Output: 21
+const person = new Person("Prasad", 24);
+console.log(person.name);
+person.age = 25;
 
-    student.study(); // Output: John Doe is studying.
-    teacher.teach();
+const student = new Student("jakob", 24);
+console.log(student.name);
+student.study();
+
+const teacher = new Teacher("Dom", 24);
+console.log(teacher.name);
+teacher.teach();
 // Do not change the code below this line
 window.Person = Person;
 window.Student = Student;
